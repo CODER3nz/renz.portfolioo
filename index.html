@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html
+  data-wf-page="64bc9556c380dc07d9eea591"
+  data-wf-site="64bc9555c380dc07d9eea52f"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Renz Portfolio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+  </head>
+  <body class="body">
+    <div class="page-wrapper">
+      <div
+        data-animation="over-right"
+        class="navbar w-nav"
+        data-easing2="ease"
+        data-easing="ease"
+        data-collapse="tiny"
+        data-w-id="bdee0a4e-8d8f-2e26-8bbe-0884e11de90a"
+        role="banner"
+        data-no-scroll="1"
+        data-duration="400"
+        data-doc-height="1"
+      >
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="navbar_container">
+              <a
+                href="/"
+                aria-current="page"
+                class="navbar_logo-link w-nav-brand w--current"
+                ><img
+                  src="navbar-logo.webp"
+                  loading="lazy"
+                  alt="Logo"
+                  class="navbar_logo"
+              /></a>
+              <nav role="navigation" class="navbar_menu w-nav-menu">
+                <a
+                  href="/index.html"
+                  aria-current="page"
+                  class="navbar_link w-nav-link w--current"
+                  >Home</a
+                ><a href="#about" class="navbar_link w-nav-link">About</a
+                ><a href="#project" class="navbar_link w-nav-link">Project</a
+                ><a href="#contact" class="navbar_link w-nav-link">Contact</a>
+              </nav>
+              <div class="menu_button w-nav-button">
+                <div
+                  data-is-ix2-target="1"
+                  class="menu_button-icon"
+                  data-w-id="85ae3fe0-5f88-b9d8-c082-fc7446c8575d"
+                  data-animation-type="lottie"
+                  data-src="https://uploads-ssl.webflow.com/64bc9555c380dc07d9eea52f/64bc9af2705ce2028172f8cc_lottieflow-menu-nav-11-20-B3BEC3-easey.json"
+                  data-loop="0"
+                  data-direction="1"
+                  data-autoplay="0"
+                  data-renderer="svg"
+                  data-default-duration="3.625"
+                  data-duration="0"
+                  data-ix2-initial-state="0"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="global-styles w-embed">
+        <style>
+          /* Make text look crisper and more legible in all browsers */
+          body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+          }
+
+          /* Focus state style for keyboard navigation for the focusable elements */
+          *[tabindex]:focus-visible,
+          input[type="file"]:focus-visible {
+            outline: 0.125rem solid #4d65ff;
+            outline-offset: 0.125rem;
+          }
+
+          /* Get rid of top margin on first element in any rich text element */
+          .w-richtext > :not(div):first-child,
+          .w-richtext > div:first-child > :first-child {
+            margin-top: 0 !important;
+          }
+
+          /* Get rid of bottom margin on last element in any rich text element */
+          .w-richtext > :last-child,
+          .w-richtext ol li:last-child,
+          .w-richtext ul li:last-child {
+            margin-bottom: 0 !important;
+          }
+
+          /* Prevent all click and hover interaction with an element */
+          .pointer-events-off {
+            pointer-events: none;
+          }
+
+          /* Enables all click and hover interaction with an element */
+          .pointer-events-on {
+            pointer-events: auto;
+          }
+
+          /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+          .div-square::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+
+          /* Make sure containers never lose their center alignment */
+          .container-medium,
+          .container-small,
+          .container-large {
+            margin-right: auto !important;
+            margin-left: auto !important;
+          }
+
+          /* Apply "..." after 3 lines of text */
+          .text-style-3lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Apply "..." after 2 lines of text */
+          .text-style-2lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Adds inline flex display */
+          .display-inlineflex {
+            display: inline-flex;
+          }
+
+          /* These classes are never overwritten */
+          .hide {
+            display: none !important;
+          }
+
+          @media screen and (max-width: 991px) {
+            .hide,
+            .hide-tablet {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            .hide-mobile-landscape {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            .hide-mobile {
+              display: none !important;
+            }
+          }
+
+          .margin-0 {
+            margin: 0rem !important;
+          }
+
+          .padding-0 {
+            padding: 0rem !important;
+          }
+
+          .spacing-clean {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+
+          .margin-top {
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-top {
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-right {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-right {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-bottom {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-bottom {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-left {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-left {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-horizontal {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-horizontal {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-vertical {
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-vertical {
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+        </style>
+      </div>
+      <main class="main-wrapper">
+        <section class="section_hero wf-section">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div class="padding-section-medium">
+                <div class="hero_container">
+                  <h1
+                    data-w-id="95e5e020-1ac6-7fcc-a6dc-7c1035b12471"
+                    style="
+                      -webkit-transform: translate3d(null, -2.5rem, null)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -moz-transform: translate3d(null, -2.5rem, null)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -ms-transform: translate3d(null, -2.5rem, null)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      transform: translate3d(null, -2.5rem, null)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      transform-style: preserve-3d;
+                      opacity: 0;
+                    "
+                    class="heading-style-h1"
+                  >
+                    I am <br />Renz Joshua D. Escorpizo
+                  </h1>
+                  <img
+                    src="hero-img.webp"
+                    sizes="(max-width: 479px) 92vw, (max-width: 767px) 93vw, (max-width: 991px) 75vw, 575px"
+                    data-w-id="af380fb8-f804-475c-14e9-6769daf9ecc5"
+                    style="
+                      -webkit-transform: translate3d(null, -2.5rem, 0)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -moz-transform: translate3d(null, -2.5rem, 0)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -ms-transform: translate3d(null, -2.5rem, 0)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      transform: translate3d(null, -2.5rem, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      opacity: 0;
+                    "
+                    srcset="
+                      https://uploads-ssl.webflow.com/64bc9555c380dc07d9eea52f/64bc97343f9cb6f97258a170_hero-img-p-500.webp 500w,
+                      https://uploads-ssl.webflow.com/64bc9555c380dc07d9eea52f/64bc97343f9cb6f97258a170_hero-img.webp       575w
+                    "
+                    alt="I am renz"
+                    class="hero_image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="section_about wf-section">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div class="padding-section-medium">
+                <div class="about_container text-align-center">
+                  <h2 class="heading-style-h2">About me</h2>
+                  <div class="spacer-small"></div>
+                  <div class="about_wrapper">
+                    <div
+                      id="w-node-_1d60df9a-0670-e9e1-c7bd-8f04bd4ccfdb-d9eea591"
+                      class="about_item"
+                    >
+                      <p class="text-size-large">Education</p>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-size-medium about_hide">
+                        I am currently in my 3rd year of college, taking a
+                        Bachelor of Science in Information Technology at the
+                        University of Pangasinan
+                      </p>
+                    </div>
+                    <div
+                      id="w-node-bdfb5855-b502-258e-9a3f-a4a070b2fa2a-d9eea591"
+                      class="about_item"
+                    >
+                      <p class="text-size-large">Experience</p>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-size-medium about_hide">
+                        C++, JAVA, Flutter, HTML and CSS
+                      </p>
+                    </div>
+                    <div
+                      id="w-node-_9b5d3572-1150-72bf-4061-c00d7b2eb15d-d9eea591"
+                      class="about_item"
+                    >
+                      <p class="text-size-large">Hobbies</p>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-size-medium about_hide">
+                        Playing: Farlight 84, Crossfire, Prototype and Mobile
+                        Legends
+                      </p>
+                    </div>
+                    <div
+                      id="w-node-_33e7703d-a4fa-4912-ddd9-8ea91aaccd01-d9eea591"
+                      class="about_item"
+                    >
+                      <p class="text-size-large">Sports</p>
+                      <div class="spacer-tiny"></div>
+                      <p class="text-size-medium about_hide">
+                        Badmenton and Basketball
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="project" class="section_project wf-section">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div class="padding-section-medium">
+                <div class="about_container text-align-center">
+                  <h2
+                    data-w-id="06cbeb8a-eaf5-7582-3074-83f4420e2bfa"
+                    class="heading-style-h2"
+                  >
+                    Project
+                  </h2>
+                  <div class="spacer-large"></div>
+                  <div class="project-wrapper">
+                    <div
+                      style="
+                        -webkit-transform: translate3d(0, 4rem, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        opacity: 0;
+                      "
+                      class="project_item"
+                    >
+                      <img
+                        src="project-one.webp"
+                        loading="lazy"
+                        width="197"
+                        alt="This is my project"
+                        class="project_image"
+                      />
+                      <div class="spacer-small"></div>
+                      <p class="text-size-regular">PUB Application</p> 
+                    </div>
+                    <div
+                      style="
+                        -webkit-transform: translate3d(0, 4rem, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        opacity: 0;
+                      "
+                      class="project_item"
+                    >
+                      <img
+                        src="project-two.webp"
+                        loading="lazy"
+                        width="197"
+                        alt="This is my project"
+                        class="project_image"
+                      />
+                      <div class="spacer-small"></div>
+                      <p class="text-size-regular">PUB Application</p> <br> </br>
+                      <p class="text-align-center"> DESCRIPTION</p>
+                      <p class="text-size-regular">It is a tool that makes it easy for citizens to access information and resources provided by the city government.</p>
+                    </div>
+                    <div
+                      style="
+                        -webkit-transform: translate3d(0, 4rem, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 4rem, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        opacity: 0;
+                      "
+                      class="project_item"
+                    >
+                      <img
+                        src="project-three.webp"
+                        loading="lazy"
+                        width="197"
+                        alt="This is my project"
+                        class="project_image"
+                      />
+                      <div class="spacer-small"></div>
+                      <p class="text-size-regular">PUB Application</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="section_contact wf-section">
+          <div class="padding-global">
+            <div class="container-medium">
+              <div class="padding-section-medium">
+                <div class="contact_container">
+                  <h2 class="text-align-center heading-style-h2">Contact me</h2>
+                  <div class="spacer-small"></div>
+                  <div class="padding-horizontal">
+                    <div class="form_component text-align-left w-form">
+                      <form
+                        id="email-form"
+                        name="email-form"
+                        data-name="Email Form"
+                        method="post"
+                        class="form_form"
+                        data-wf-page-id="64bc9556c380dc07d9eea591"
+                        data-wf-element-id="820af284-b9c2-a9ca-c974-9aed26c573e0"
+                      >
+                        <div class="form_field-wrapper">
+                          <label for="name" class="form_label">Name</label
+                          ><input
+                            type="text"
+                            class="form_input w-input"
+                            maxlength="256"
+                            name="name"
+                            data-name="Name"
+                            placeholder="Renz Escorpizo"
+                            id="name"
+                            required=""
+                          />
+                        </div>
+                        <div class="form_field-wrapper">
+                          <label for="email" class="form_label"
+                            >Email Address</label
+                          ><input
+                            type="email"
+                            class="form_input w-input"
+                            maxlength="256"
+                            name="email"
+                            data-name="Email"
+                            placeholder="Renzescorpizo@gmail.com"
+                            id="email"
+                            required=""
+                          />
+                        </div>
+                        <input
+                          type="submit"
+                          value="Submit"
+                          data-wait="Please wait..."
+                          class="button is-form-submit w-button"
+                        />
+                      </form>
+                      <div class="form_message-success w-form-done">
+                        <div class="text-size-regular">
+                          Thank you for contacting me!
+                        </div>
+                      </div>
+                      <div
+                        class="form_message-error text-align-center w-form-fail"
+                      >
+                        <div>
+                          Oops! Something went wrong while submitting the form.
+                        </div>
+                      </div>
+                      <div>
+                        <br>
+                      <p class="text-align-left">Email: Renzjoshua1012@gmail.com</p>
+
+                      <p class="text-align-left">Mobile number: 09500995517</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="padding-section-medium">
+              <div class="footer_container">
+                <a
+                  href="/"
+                  aria-current="page"
+                  class="footer_logo-link w-nav-brand w--current"
+                  ><img
+                    src="navbar-logo.webp"
+                    loading="lazy"
+                    alt="Logo"
+                    class="footer_logo"
+                /></a>
+                <div class="socmed_wrapper">
+                  <a
+                    href="https://www.facebook.com/haringrenz"
+                    target="_blank"
+                    class="socmed_logo-link"
+                    ></a
+                  ><a
+                    href="https://www.instagram.com/_rnnzz/?hl=en"
+                    target="_blank"
+                    class="socmed_logo-link"
+                    ></a
+                  ><a
+                    href="https://github.com/CODER3nz"
+                    target="_blank"
+                    class="socmed_logo-link"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64bc9555c380dc07d9eea52f"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
